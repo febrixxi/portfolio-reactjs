@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.7;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: medium none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+  transition: 1s;
+}
+#sidebar {
+  width: 23%;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  padding: 10px 30px 30px 30px;
+}
+#main-part {
+  width: 77%;
+  float: right;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.main-part-mobile {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  z-index: 999;
+  background: #fff;
+  padding: 3px 8px;
+  box-shadow: 0 0 10px rgba(102, 113, 228, 0.18);
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+/* end default CSS */
+
+/* sidebar CSS */
+.sidebar-title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.sidebar-title-img img {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid #f3f5fb;
+  box-shadow: 0 5p 10px rgba(102, 113, 228, 0.13);
+  margin-bottom: 20px;
+}
+.sidebar-title-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+.menu ul li {
+  text-transform: capitalize;
+  padding: 10px 0 10px 0;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #ececec;
+}
+.menu ul li a {
+  color: #748182;
+  transition: 0.5s;
+}
+.menu ul li a:hover {
+  color: crimson;
+}
+.copyright {
+  text-align: center;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  font-size: 12px;
+  color: #748182;
+}
+/* end sidebar CSS */
+
+/* intro CSS */
+#intro-area {
+  background: url(../img/company.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+.caption-intro {
+  padding-top: 180px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.caption-intro h4 {
+  text-transform: capitalize;
+  padding-bottom: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.caption-intro h1 {
+  text-transform: capitalize;
+  font-size: 45px;
+}
+.social-intro {
+  padding-top: 50px;
+}
+.social-intro ul li {
+  display: inline-block;
+}
+.social-intro i {
+  color: #fff;
+  font-size: 14px;
+  background: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.social-intro i:hover {
+  color: #333;
+  background: #fff;
+  transition: 0.5s;
+}
+.cta-intro {
+  padding-top: 60px;
+  text-align: center;
+}
+.cta-intro a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  background: #333;
+  padding: 11px 40px;
+  border-radius: 50px;
+  border: 1px solid #333;
+}
+.cta-intro a:hover {
+  background: transparent;
+  color: #333;
+  transition: 1s;
+}
+/* end intro CSS */
+
+/* about CSS */
+#about-us {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.about-us-img {
+  margin-top: 20px;
+}
+.about-us-img img {
+  width: 80%;
+}
+.about-us-text {
+  padding-left: 30px;
+}
+.about-us-title p:nth-child(1) {
+  font-size: 40px;
+  font-weight: 700;
+}
+.about-us-title p:nth-child(2) {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: -5px;
+}
+.about-us-description {
+  padding-top: 25px;
+  text-align: justify;
+  color: #748182;
+  font-size: 14px;
+}
+.about-us-information {
+  padding-top: 40px;
+}
+.about-us-information-detail {
+  position: relative;
+  padding-bottom: 20px;
+}
+.about-us-information-detail i {
+  position: absolute;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  background: #f4f5f8;
+  text-align: center;
+}
+.about-us-information-detail p {
+  padding-left: 40px;
+}
+.about-us-information-detail p:nth-child(2) {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+.about-us-information-detail p:nth-child(3) {
+  padding-top: 0px;
+  color: #748182;
+  font-size: 14px;
+}
+.about-us-information-cta {
+  padding-top: 35px;
+}
+.about-us-information-cta a:nth-child(1) {
+  font-weight: 500px;
+  font-size: 14px;
+  color: #fff;
+  background: #212529;
+  padding: 11px 40px;
+  border-radius: 50px;
+  border: 1px solid #212529;
+  margin-right: 20px;
+}
+.about-us-information-cta a:nth-child(1):hover {
+  color: #212529;
+  background: transparent;
+}
+.about-us-information-cta a:nth-child(2) {
+  font-weight: 500px;
+  font-size: 14px;
+  color: #212529;
+  background: transparent;
+  padding: 11px 40px;
+  border-radius: 50px;
+  border: 1px solid #212529;
+  margin-right: 20px;
+}
+.about-us-information-cta a:nth-child(2):hover {
+  color: #fff;
+  background: #212529;
+}
+/* end about CSS */
+
+/* skills CSS */
+#skills {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.skills-detail {
+  padding-top: 40px;
+}
+.skills-selection {
+  padding: 5px;
+  margin-bottom: 40px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
+}
+.skills-icon {
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  background: #f4f5f8;
+  border-radius: 50%;
+}
+.skills-description p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.skills-description p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: #748182;
+}
+.skills-selection:hover .skills-icon {
+  color: #fff;
+  background: #212529;
+  transition: 0.5s;
+}
+.skills-selection:hover {
+  box-shadow: 0 15px 30px rgba(102, 113, 228, 0.5);
+}
+/* end skills CSS */
+
+/* education CSS */
+#education {
+  background: #fff;
+  padding: 40px 10px;
+}
+.education-detail {
+  padding-top: 30px;
+}
+.education-desc,
+.education-time {
+  padding-top: 40px;
+}
+.education-desc h3,
+.education-desc h4,
+.education-desc p {
+  padding: 5px;
+}
+.education-desc h3 {
+  color: #fff;
+  background-color: #212529;
+  border-radius: 30px;
+}
+.education-time {
+  font-size: 14px;
+  font-weight: 500;
+}
+/* end education CSS */
+
+/* contact CSS */
+#contact {
+  background: #f4f5f8;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.contact-detail {
+  padding-top: 40px;
+}
+.contact-detail .form-control {
+  margin-bottom: 15px;
+  height: 50px;
+  border: medium none;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
+}
+.contact-detail textarea.form-control {
+  height: 200px;
+  resize: none;
+}
+.contact-detail ::placeholder {
+  color: #a2a1a1;
+}
+.contact-detail .btn {
+  color: #fff;
+  font-size: 15px;
+  background: #212529;
+  padding: 11px 40px;
+  border-radius: 50px;
+  font-weight: 500;
+  margin-top: 40px;
+  border: 1px solid #212529;
+}
+.contact-detail .btn:hover {
+  color: #212529;
+  background: transparent;
+}
+#contact .contact-detail {
+  width: 80%;
+  margin: 0 auto;
+}
+/* end contact CSS */
+
+/* footer CSS */
+#footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.footer-detail {
+  margin-bottom: 30px;
+}
+.footer-detail i {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.footer-detail p:nth-child(2) {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+.footer-detail p:nth-child(3) {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+/* end footer CSS */
