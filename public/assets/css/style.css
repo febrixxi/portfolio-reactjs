@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900");
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900');
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #fff;
   overflow-x: hidden;
   font-size: 15px;
@@ -153,6 +153,8 @@ a:hover {
   background: url(../img/company.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
+  float: right;
+  width: 77%;
 }
 .caption-intro {
   padding-top: 180px;
@@ -215,6 +217,8 @@ a:hover {
 #about-us {
   padding-top: 60px;
   padding-bottom: 60px;
+  float: right;
+  width: 77%;
 }
 .about-us-img {
   margin-top: 20px;
@@ -307,6 +311,8 @@ a:hover {
 #skills {
   padding-top: 60px;
   padding-bottom: 60px;
+  float: right;
+  width: 77%;
 }
 .skills-detail {
   padding-top: 40px;
@@ -354,6 +360,8 @@ a:hover {
 #education {
   background: #fff;
   padding: 40px 10px;
+  float: right;
+  width: 77%;
 }
 .education-detail {
   padding-top: 30px;
@@ -383,6 +391,8 @@ a:hover {
   background: #f4f5f8;
   padding-top: 80px;
   padding-bottom: 60px;
+  float: right;
+  width: 77%;
 }
 .contact-detail {
   padding-top: 40px;
@@ -431,6 +441,8 @@ a:hover {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 50px;
+  float: right;
+  width: 77%;
 }
 .footer-detail {
   margin-bottom: 30px;

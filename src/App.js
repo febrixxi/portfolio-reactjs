@@ -1,29 +1,26 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import Sidebar from './pages/Sidebar';
-import Intro from './pages/Intro';
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Education from './pages/Education';
-import Contact from './pages/Contact';
-import Footer from './pages/Footer';
 import './App.css';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import Sidebar from './pages/Sidebar';
+import routes from './config/routes';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Sidebar />
-      <div id="main-part">
-        <div className="main-part-mobile">
-          <i className="fa fa-bars" />
-        </div>
-        <Intro />
-        <About />
-        <Skills />
-        <Education />
-        <Contact />
-        <Footer />
-      </div>
-    </div>
+      <Switch>
+        {routes.map((route) => {
+          return (
+            <Route
+              path={route.path}
+              component={route.component}
+              key={route.path}
+            />
+          );
+        })}
+      </Switch>
+    </BrowserRouter>
   );
 }
 export default App;
