@@ -23,6 +23,11 @@ function Sidebar() {
         </div>
         <div className="sidebar-title-text">Febrian Aji Pangestu</div>
       </div>
+      <div className="state">
+        <button onClick={decrementCount}>-</button>
+        <span>Umur saya {count} tahun</span>
+        <button onClick={incrementCount}>+</button>
+      </div>
       <nav className="menu">
         <ul>
           <li>
@@ -42,11 +47,6 @@ function Sidebar() {
           </li>
         </ul>
       </nav>
-      <div className="state">
-        <button onClick={decrementCount}>-</button>
-        <span>Umur saya {count} tahun</span>
-        <button onClick={incrementCount}>+</button>
-      </div>
       <div className="copyright">© 2020 All Right Reserved</div>
     </div>
   );
