@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import ThemeContext from '../context/ThemeContext';
+import ThemeSwitcher from '../pages/ThemeSwitcher';
 
 function Sidebar() {
   const [count, setCount] = useState(22);
+  const { theme } = useContext(ThemeContext);
 
   function decrementCount() {
     setCount((prevCount) => prevCount - 1);
@@ -12,7 +15,7 @@ function Sidebar() {
   }
 
   return (
-    <div id="sidebar">
+    <div id="sidebar" bg="{theme}" variant="{theme}">
       <div className="sidebar-title">
         <div className="sidebar-title-img">
           <img
@@ -47,6 +50,7 @@ function Sidebar() {
           </li>
         </ul>
       </nav>
+      <ThemeSwitcher />
       <div className="copyright">© 2020 All Right Reserved</div>
     </div>
   );

@@ -495,3 +495,27 @@ a:hover {
 }
 
 /* end hook styling */
+@import '~bootstrap/scss/bootstrap';
+
+/* Context */
+.dark {
+  background-color: #404042;
+  color: gray;
+}
+.button-theme {
+  margin-left: -10px;
+  background: none !important;
+  border: none !important;
+}
+.button-theme:active {
+  box-shadow: none !important;
+}
+.button-theme:focus {
+  box-shadow: none !important;
+}
+.theme-icon {
+  height: 22px;
+  width: 22px;
+  min-width: 22px;
+  margin-bottom: 0;
+}
